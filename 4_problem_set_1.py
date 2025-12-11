@@ -23,50 +23,58 @@
 
 # print('the sum of numbers 1 to', n, 'is', total_sum)
 
-# ### **Problem 3: Factorial Calculator
+# # ### **Problem 3: Factorial Calculator
 
-# Ask the user for a number **n**, then calculate the **factorial** of that number.
+# # Ask the user for a number **n**, then calculate the **factorial** of that number.
 
-# *(Example: factorial of 5 is 120)
-for i in range(10):
-    print(i)
+# # *(Example: factorial of 5 is 120)
+# for i in range(10):
+#     print(i)
 
-def factorial(n):
+# def factorial(n):
 
-    factorial = 1
+#     factorial = 1
 
-    for i in range(n):
-        factorial*=i+1
+#     for i in range(n):
+#         factorial*=i+1
 
-    return factorial
+#     return factorial
 
-print(factorial(6))
-# ### **Problem 4: Count Vowels**
+# print(factorial(6))
+# # ### **Problem 4: Count Vowels**
 
-# Ask the user for a string. Count and print how many **vowels (a, e, i, o, u)** are in the string.
+# # Ask the user for a string. Count and print how many **vowels (a, e, i, o, u)** are in the string.
 
 
-# ### **Problem 5: Print Even Numbers**
+# # ### **Problem 5: Print Even Numbers**
 
-# Ask the user for a number **n**, then print all **even numbers** from 2 up to n.
-n = int(input('Enter a number: '))
-print('even numbers from 2 to')
-for number in range(2, n + 1, 2):
-    print(number)
+# # Ask the user for a number **n**, then print all **even numbers** from 2 up to n.
+# n = int(input('Enter a number: '))
+# print('even numbers from 2 to')
+# for number in range(2, n + 1, 2):
+#     print(number)
 
-listevennumbers = list(range(1,45))
-for number in listevennumbers:
-#if num even print
-    if number %2 == 0:
-        print('even number', number)
-    else:
-        print('odd number, skipping', number)
+# listevennumbers = list(range(1,45))
+# for number in listevennumbers:
+# #if num even print
+#     if number %2 == 0:
+#         print('even number', number)
+#     else:
+#         print('odd number, skipping', number)
 
 
 # ### **Problem 6: Reverse a String**
 
 # Ask the user for a string, then print the string **backwards**.
-
+name = input('enter a string: ')
+reversed_name = ''
+for char in name:
+    #we are looing through characters
+    #n adding to front of reversed_name
+    reversed_name = char + reversed_name
+#prepend each character to rever name
+print('reversed string', reversed_name)
+print(reversed_name[::-1])#alt method usin slicing
 
 
 # ### **Problem 7: Multiplication Table**
