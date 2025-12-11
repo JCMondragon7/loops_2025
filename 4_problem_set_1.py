@@ -4,32 +4,43 @@
 # **Directions:** Solve each problem by writing your own Python code. Show outputs where required.
 
 
-# ### **Problem 1: Print Numbers 1 to 10
+# # ### **Problem 1: Print Numbers 1 to 10
 
-# Write a program that prints the numbers from **1 to 10**, each on a new line.
-list1to10 = list(range(1,11))
-for number in list1to10:
-    print(number)
+# # Write a program that prints the numbers from **1 to 10**, each on a new line.
+# list1to10 = list(range(1,11))
+# for number in list1to10:
+#     print(number)
 
 
 
-# ### **Problem 2: Sum of Numbers
+# # ### **Problem 2: Sum of Numbers
 
-# Ask the user for a number **n**, then calculate and display the **sum of all numbers from 1 to n**.
-n = int(input('enter a number: '))
-total_sum = 0
-for number in range(1, n+ 1):
-    total_sum += number
+# # Ask the user for a number **n**, then calculate and display the **sum of all numbers from 1 to n**.
+# n = int(input('enter a number: '))
+# total_sum = 0
+# for number in range(1, n+ 1):
+#     total_sum += number
 
-print('the sum of numbers 1 to', n, 'is', total_sum)
+# print('the sum of numbers 1 to', n, 'is', total_sum)
 
 # ### **Problem 3: Factorial Calculator
 
 # Ask the user for a number **n**, then calculate the **factorial** of that number.
 
 # *(Example: factorial of 5 is 120)
+for i in range(10):
+    print(i)
 
+def factorial(n):
 
+    factorial = 1
+
+    for i in range(n):
+        factorial*=i+1
+
+    return factorial
+
+print(factorial(6))
 # ### **Problem 4: Count Vowels**
 
 # Ask the user for a string. Count and print how many **vowels (a, e, i, o, u)** are in the string.
@@ -38,7 +49,18 @@ print('the sum of numbers 1 to', n, 'is', total_sum)
 # ### **Problem 5: Print Even Numbers**
 
 # Ask the user for a number **n**, then print all **even numbers** from 2 up to n.
+n = int(input('Enter a number: '))
+print('even numbers from 2 to')
+for number in range(2, n + 1, 2):
+    print(number)
 
+listevennumbers = list(range(1,45))
+for number in listevennumbers:
+#if num even print
+    if number %2 == 0:
+        print('even number', number)
+    else:
+        print('odd number, skipping', number)
 
 
 # ### **Problem 6: Reverse a String**
